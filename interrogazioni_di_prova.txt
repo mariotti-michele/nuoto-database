@@ -1,0 +1,26 @@
+--op.9
+SELECT * FROM public.info_atleta('MRTLSE06R42D451N')
+
+--op.11
+SELECT * FROM info_societa(2)
+
+--op.24
+SELECT * FROM tempi_gara_individuale(1, 'Campionato Italiano Assoluto Frecciarossa (Riccione)', '2022-11-10', 'M', NULL)
+SELECT * FROM tempi_gara_individuale(1, 'Campionato Italiano Assoluto Frecciarossa (Riccione)', '2022-11-10', 'M', 'SM')
+
+--op.27
+SELECT * FROM tempi_atleta_tipologia_gara_ordine_tempo('MRTLSE06R42D451N', 17, 25)
+
+--op.28
+SELECT * FROM graduatoria_tempi_atleti(16, 'F', 25, NULL)
+SELECT * FROM graduatoria_tempi_atleti(16, 'F', 25, '2022/2023')
+
+--op.30
+SELECT * FROM migliori_tempi_atleta('MRTLSE06R42D451N', 25, NULL)
+SELECT * FROM migliori_tempi_atleta('MRTLSE06R42D451N', 25, '2022/2023')
+
+--op.41
+SELECT * FROM persone_con_brevetto_societa(2)
+
+--op.48
+SELECT * FROM persone_in_societa(2)
